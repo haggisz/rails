@@ -158,3 +158,342 @@ Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.0ms | Allocations:
 LoadError (cannot load such file -- sassc):
   
 app/views/layouts/application.html.erb:9
+  [1m[35m (30.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBoards (20230914023935)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "boards" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230914023935"]]
+  [1m[36mTRANSACTION (47.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-09-14 02:50:36.579225"], ["updated_at", "2023-09-14 02:50:36.579225"]]
+  [1m[36mTRANSACTION (134.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBoards (20230914023935)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (279.4ms)[0m  [1m[35mDROP TABLE "boards"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230914023935"]]
+  [1m[36mTRANSACTION (169.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBoards (20230914023935)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "boards" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230914023935"]]
+  [1m[36mTRANSACTION (41.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.24.0.1 at 2023-09-14 03:25:47 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 632)
+Completed 200 OK in 115ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 7305)
+
+
+Started GET "/boards" for 172.24.0.1 at 2023-09-14 03:26:03 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 4082)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms | Allocations: 5011)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/boards" for 172.24.0.1 at 2023-09-14 03:33:35 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 113.4ms | Allocations: 11887)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.0ms | Allocations: 12109)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/boards" for 172.24.0.1 at 2023-09-14 03:36:18 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 91.7ms | Allocations: 11870)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms | Allocations: 12091)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/boards" for 172.24.0.1 at 2023-09-14 03:45:57 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 460.5ms | Allocations: 2543)
+Completed 500 Internal Server Error in 555ms (ActiveRecord: 0.0ms | Allocations: 3397)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/boards" for 172.24.0.1 at 2023-09-14 03:48:34 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 159.7ms | Allocations: 12233)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms | Allocations: 13001)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/boards" for 172.24.0.1 at 2023-09-14 04:11:10 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 49.1ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 254.4ms | Allocations: 2543)
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 0.0ms | Allocations: 3396)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/boards" for 172.24.0.1 at 2023-09-14 04:11:17 +0000
+Cannot render console from 172.24.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2219)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2440)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/boards" for 172.25.0.1 at 2023-09-14 04:43:48 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 476)
+Started GET "/" for 172.25.0.1 at 2023-09-14 04:43:58 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.4ms | Allocations: 421)
+Completed 200 OK in 32ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 1224)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 17324.7ms | Allocations: 121345)
+Completed 200 OK in 17515ms (Views: 17373.7ms | ActiveRecord: 0.0ms | Allocations: 128143)
+
+
+Started GET "/boards" for 172.25.0.1 at 2023-09-14 04:44:07 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 75.9ms | Allocations: 4884)
+Completed 200 OK in 96ms (Views: 81.0ms | ActiveRecord: 0.0ms | Allocations: 5687)
+
+
+Started GET "/boards/new" for 172.25.0.1 at 2023-09-14 04:51:26 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 2229)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 2318)
+Completed 500 Internal Server Error in 778ms (ActiveRecord: 6.5ms | Allocations: 20761)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    4:     <a href="/boards" class="btn btn-outline-dark">掲示板一覧</a>
+    5:   </div>
+    6: </div>
+    7: <%= form_for @board do |f| %>
+    8:   <div class="form-group">
+    9:   <%= f.label :name, '名前'%>
+   10:   <%= f.text_field :name, class: 'form-control' %>
+  
+app/views/boards/new.html.erb:7
+Started GET "/boards/new" for 172.25.0.1 at 2023-09-14 05:02:58 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 29.6ms | Allocations: 3301)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 3404)
+Completed 500 Internal Server Error in 424ms (ActiveRecord: 1.1ms | Allocations: 20331)
+
+
+  
+ActionView::Template::Error (undefined method `submit' for #<ActionView::Base:0x0000000000b428>):
+    17:   <%= f.label :body, '本文'%>
+    18:   <%= f.text_area :body, class: 'form-control', rows: 10 %>
+    19:   </div>
+    20:   <%= submit '保存', class: 'btn btn-primary'%>
+    21: <% end %>
+  
+app/views/boards/new.html.erb:20
+app/views/boards/new.html.erb:7
+Started GET "/boards/new" for 172.25.0.1 at 2023-09-14 05:23:24 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 54.1ms | Allocations: 2381)
+  Rendered layout layouts/application.html.erb (Duration: 698.2ms | Allocations: 31867)
+Completed 200 OK in 1304ms (Views: 716.9ms | ActiveRecord: 1.2ms | Allocations: 48850)
+
+
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 05:26:29 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/boards"):
+  
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 05:55:26 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"", "title"=>"", "body"=>""}, "commit"=>"保存"}
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 149609ms (ActiveRecord: 0.0ms | Allocations: 703483)
+
+
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 05:57:56 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 05:57:57 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"", "title"=>"", "body"=>""}, "commit"=>"保存"}
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"", "title"=>"", "body"=>""}, "commit"=>"保存"}
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 05:57:57 +0000
+Started GET "/" for 172.25.0.1 at 2023-09-14 05:57:57 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"", "title"=>"", "body"=>""}, "commit"=>"保存"}
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 56.8ms | Allocations: 44268)
+Completed 200 OK in 282ms (Views: 149.7ms | ActiveRecord: 0.0ms | Allocations: 225174)
+
+
+Started GET "/board" for 172.25.0.1 at 2023-09-14 06:11:51 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/board" for 172.25.0.1 at 2023-09-14 06:11:51 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/board"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/board"):
+  
+Started GET "/boards" for 172.25.0.1 at 2023-09-14 06:12:00 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/index.html.erb within layouts/application
+  Rendered boards/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 275.6ms | Allocations: 29629)
+Completed 200 OK in 301ms (Views: 289.1ms | ActiveRecord: 0.0ms | Allocations: 31750)
+
+
+Started GET "/boards/new" for 172.25.0.1 at 2023-09-14 06:12:04 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering boards/new.html.erb within layouts/application
+  Rendered boards/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 1758)
+  Rendered layout layouts/application.html.erb (Duration: 55.5ms | Allocations: 6037)
+Completed 200 OK in 103ms (Views: 58.0ms | ActiveRecord: 1.4ms | Allocations: 17324)
+
+
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 06:12:11 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"a", "title"=>"a", "body"=>"a"}, "commit"=>"保存"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mBoard Create (10.8ms)[0m  [1m[32mINSERT INTO "boards" ("name", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "a"], ["title", "a"], ["body", "a"], ["created_at", "2023-09-14 06:12:11.784582"], ["updated_at", "2023-09-14 06:12:11.784582"]]
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (21.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 06:12:18 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"a", "title"=>"a", "body"=>"a"}, "commit"=>"保存"}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mBoard Create (3.6ms)[0m  [1m[32mINSERT INTO "boards" ("name", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "a"], ["title", "a"], ["body", "a"], ["created_at", "2023-09-14 06:12:18.424861"], ["updated_at", "2023-09-14 06:12:18.424861"]]
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 06:12:21 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"a", "title"=>"a", "body"=>"a"}, "commit"=>"保存"}
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mBoard Create (3.5ms)[0m  [1m[32mINSERT INTO "boards" ("name", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "a"], ["title", "a"], ["body", "a"], ["created_at", "2023-09-14 06:12:21.675712"], ["updated_at", "2023-09-14 06:12:21.675712"]]
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 06:12:31 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"a", "title"=>"a", "body"=>"a"}, "commit"=>"保存"}
+  [1m[36mTRANSACTION (14.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mBoard Create (5.0ms)[0m  [1m[32mINSERT INTO "boards" ("name", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "a"], ["title", "a"], ["body", "a"], ["created_at", "2023-09-14 06:12:31.934589"], ["updated_at", "2023-09-14 06:12:31.934589"]]
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (21.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+Started POST "/boards" for 172.25.0.1 at 2023-09-14 06:12:32 +0000
+Cannot render console from 172.25.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BoardsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "board"=>{"name"=>"a", "title"=>"a", "body"=>"a"}, "commit"=>"保存"}
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mBoard Create (6.8ms)[0m  [1m[32mINSERT INTO "boards" ("name", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "a"], ["title", "a"], ["body", "a"], ["created_at", "2023-09-14 06:12:32.663923"], ["updated_at", "2023-09-14 06:12:32.663923"]]
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (11.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/boards_controller.rb:11:in `create'
+No template found for BoardsController#create, rendering head :no_content
+Completed 204 No Content in 429683ms (ActiveRecord: 31.8ms | Allocations: 1948413)
+
+
